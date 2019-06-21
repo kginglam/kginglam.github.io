@@ -1,6 +1,6 @@
 ---
 layout: page
-description: "仰望长空几朵云，风吹过后不留痕。 曾经啥样谁还记，跌宕人生是落尘。"
+description: "Thinking will not overcome fear but action will."
 ---
 
 {% for post in paginator.posts %}
@@ -19,8 +19,7 @@ description: "仰望长空几朵云，风吹过后不留痕。 曾经啥样谁�
         </div>
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on
-        {{ post.date | date: "%B %-d, %Y" }}
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
 </div>
 <hr>
